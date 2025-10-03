@@ -1,4 +1,9 @@
 /**
+ * @author Allyson Dulce Abigail Escobar Sandoval
+ * @since 03/10/2025
+ * 
+ * -status:completa
+ * 
  * Clase padre
  * Maneja los datos en común de los procesos (PID y nombre), pero como todos sus procesos se deben de ejecutar de manera distinta, 
  * entonces se crea una “plantilla” que cada proceso podrá llenar a su manera.
@@ -29,7 +34,7 @@ public abstract class Procesos {
 
     @Override
     public String toString(){
-        String cadena="Nombre: " + nombre + "\nPID: " + PID;
+        String cadena="\nNombre: " + nombre + "\nPID: " + PID;
         return cadena;
     }
 

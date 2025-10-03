@@ -1,7 +1,11 @@
 
 import java.util.ArrayList;
-
 /**
+ * @author Allyson Dulce Abigail Escobar Sandoval
+ * @since 03/10/2025
+ * 
+ * -status:completa
+ * 
  * Permite registrar todos los registros de cualquier proceso, es decir, no importa si son de un diferente tipo.
  */
 public class Registro {
