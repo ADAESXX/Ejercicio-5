@@ -3,6 +3,15 @@
  */
 public class PlanificadorP {
     public PlanificadorP(){
+        
+    }
+    //métodos de lógica
+    public String Ejecutar(){
+        return null;
+    }
 
+    public String toString(){
+        String cadena="";
+        return cadena;
     }
 }

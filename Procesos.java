@@ -24,13 +24,12 @@ public abstract class Procesos {
     public String getNombre(){return nombre;}
 
     //Método abstracto "plantilla" para ejecutar procesos
-    abstract void EjecutarP();
+    abstract String EjecutarP();
 
-    /**
-     * 
-     */
+
+    @Override
     public String toString(){
-        String cadena="";
+        String cadena="Nombre: " + nombre + "\nPID: " + PID;
         return cadena;
     }
 
