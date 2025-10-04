@@ -6,20 +6,22 @@ import java.util.ArrayList;
  * @since 03/10/2025
  * 
  * -status:completa
+ * -arreglo: se arreglo el error de la creacion de registro
  * 
  * Ejecuta el proceso de cada proceso dentro del registro, sin importar que proceso sea.
  */
 public class PlanificadorP {
-    public PlanificadorP(){
+    private Registro registro;
 
+    public PlanificadorP(Registro registro){
+        this.registro=registro;
     }
     //métodos de lógica
     public String Ejecutar(){
-        Registro r= new Registro();
-        ArrayList <Procesos> registros= r.getProcesos();
+        ArrayList <Procesos> registros= registro.getProcesos();
         String reporte="";
         for (Procesos p: registros){
-            reporte=p.EjecutarP();
+            reporte+=p.EjecutarP() + "\n";
         }
         return reporte;
 

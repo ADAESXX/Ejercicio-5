@@ -19,7 +19,7 @@ public abstract class Procesos {
     }
     public Procesos(int newPID, String newNombre){
         PID=newPID;
-        newNombre=nombre;
+        nombre=newNombre;
     }
     //setters y getters
     public void setPID(int newPID){PID=newPID;}
